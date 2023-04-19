@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="mainwebsite.css">
+    <!-- <link rel="stylesheet" href="weather.css"> -->
+    
+</head>
+<body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="bigcontainer">
+        <div class="item header">
+            <h1>NEWSCONNECT</h1>
+            <link rel="stylesheet" href="/style.css">
+            <div class="navigation">
+                <ul>
+                    <li class="list active">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="title">Home</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="newspaper-outline"></ion-icon>
+                            </span>
+                            <span class="title">Latest</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="briefcase-outline"></ion-icon>
+                            </span>
+                            <span class="title">Business</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="desktop-outline"></ion-icon>
+                            </span>
+                            <span class="title">Tech</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="football-outline"></ion-icon>
+                            </span>
+                            <span class="title">Sports</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="videocam-outline"></ion-icon>
+                            </span>
+                            <span class="title">Entertainment</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="glasses-outline"></ion-icon>
+                            </span>
+                            <span class="title">Life style</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        
+        
+            <div class="toggle">
+                <ion-icon name="menu-outline" class="open"></ion-icon>
+                <ion-icon name="close-outline" class="close"></ion-icon>
+            </div>
+        
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+            <script>
+                let menuToggle = document.querySelector('.toggle');
+                let navigation = document.querySelector('.navigation')
+                menuToggle.onclick = function () {
+                    menuToggle.classList.toggle('active')
+                    navigation.classList.toggle('active')
+                }
+        
+        
+        
+        
+        
+        
+                let list = document.querySelectorAll('.list');
+                for (let i = 0; i < list.length; i++) {
+                    list[i].onclick = function () {
+                        let j = 0;
+                        while (j < list.length) {
+                            list[j++].className = 'list';
+                        }
+                        list[i].className = 'list active';
+                    }
+        
+                }
+            </script>
+
+
+        </div>
+        <div id="item1">
+
+
+        </div>
+        
+        <div id="container">
+            <!-- <div class="cricket">
+                <div id="score-frame"><a rel="nofollow" href="https://www.crictimes.org/cricket-scores">Live Cricket Scores</a></div><script type="text/javascript">var html = document.getElementById('score-frame');html.innerHTML = '<iframe src="https://cwidget.crictimes.org/?b=d9d9d9&sb=434343&c=cccccc&a=434343&bo=434343&dc=000000&db=ffffff" style="width:100%;min-height: 460px;" frameborder="0" scrolling="yes"></iframe>';</script>
+            </div>
+            <div>
+                <div class="input">
+                    <input type="text" placeholder="Enter the city" class="input_text">
+                    <input type="submit" value="Submit" class="submit">
+                  </div>
+                </div> -->
+                
+                <!-- <div class="container">
+                  <div class="card">
+                    <h1 class="name" id="cityname"></h1>
+                    <p class="temp"></p>
+                    <p class="feels_like"></p>
+                    <div class="flex">
+                      <img src="" alt="" class="icon" >
+                      <span class="description"></span>
+                    </div>
+                    <p class="humidity"></p>
+                    <p class="windspeed"></p>
+                  </div>
+                </div> -->
+                <script src="search.js"></script>
+            </div>
+        </div>
+        <!-- <div class="item3">
+            
+        </div>
+        <div class="item4">
+            
+        </div>
+        <div class="item5">
+            
+        </div>-->
+        
+        
+        
+        <div class="item footer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsa eaque alias sapiente error dolore a doloremque consequatur tempora in!
+        </div>
+        <script src="/search.js"></script> 
+
+
+
+    </div>
+</body>
+</html>

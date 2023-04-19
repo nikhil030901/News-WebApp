@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="NEWS_CONNECT.CSS">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: rgb(7, 70, 165);
+            color: white;
+            font-weight: lighter;
+            height: 100px;
+            text-align: center;
+            padding: 27px;
+
+
+
+        }
+
+        #home {
+            text-align: left;
+
+            padding: 10px 351px;
+
+        }
+        #newsAccordion{
+            padding:10px 100px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    
+
+    <div class="header">
+        <h1>NEWSCONNECT</h1>
+    </div>
+
+    <div class="header" id="home">
+        <a href="/NEWS_CONNECT.HTML">Home</a>
+    </div>
+    <div class="accordion" id="newsAccordion">
+
+
+        
+    </div>
+  </div>
+  Optional JavaScript
+  jQuery first, then Popper.js, then Bootstrap JS
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+     crossorigin="anonymous"></script> 
+  <script src="dummynews.js"></script>
+  <!-- <script src="index.js"></script> -->
+  <br>
+  <br>
+  <br>
+
+
+
+  navigate to times of india News
+  <div class="btn"><a href="/times of india.html"><input type="button" value="times of india"></a></div>
+
+  <div class="navigation">
+    <ul>
+        <li class="list active">
+            <b></b>
+            <b></b>
+            <a href="#">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                <span class="title">Home</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#">
+                <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
+                <span class="title">Latest</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#">
+                <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
+                <span class="title">Business</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#">
+                <span class="icon"><ion-icon name="desktop-outline"></ion-icon></span>
+                <span class="title">Tech</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#">
+                <span class="icon"><ion-icon name="football-outline"></ion-icon></span>
+                <span class="title">Sports</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#">
+                <span class="icon"><ion-icon name="videocam-outline"></ion-icon></span>
+                <span class="title">Entertainment</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#">
+                <span class="icon"><ion-icon name="glasses-outline"></ion-icon></span>
+                <span class="title">Life style</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="toggle">
+    <ion-icon name="menu-outline" class="open"></ion-icon>
+    <ion-icon name="close-outline" class="close"></ion-icon>
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+    let menuToggle = document.querySelector('.toggle');
+    let navigation = document.querySelector('.navigation')
+    menuToggle.onclick = function() {
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+    }
+
+
+
+
+
+
+    let list = document.querySelectorAll('.list');
+    for (let i = 0; i < list.length; i++) {
+        list[i].onclick = function() {
+            let j = 0;
+            while (j < list.length) {
+                list[j++].className = 'list';
+            }
+            list[i].className = 'list active';
+        }
+
+    }
+</script>
+
+</body>
+
+</html>

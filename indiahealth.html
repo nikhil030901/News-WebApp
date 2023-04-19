@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>India - Health</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/category.css">
+    
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600&family=Shalimar&display=swap');
+</style>
+<body>
+    <div id="bigcontainer">
+        <div class="header">
+            <a href="/mainwebsitelayout.html"><img class="img" src="/Newsconnect (1).png" alt=""></a>
+            <div class="menu">
+
+                <div class="categories" style="margin-top: 40px;">
+                    
+
+
+
+                    <ul1 style="list-style: none; display: grid; grid-template-columns: 1fr 1fr; column-gap: 5px;">
+                        <div>
+                            <li style="width: 72;"><a href="/USA NEWS/USAMAIN.HTML" 
+                                    style="text-decoration: none; color: #E4E9F7; ">U.S.A</a></li>
+                        </div>
+                        <div>
+                            <li style="width: 72;"><a href="/UK NEWS/UKMAIN.HTML" style="text-decoration: none; color: #E4E9F7;">U.K</a>
+                            </li>
+                        </div>
+                    </ul1>
+                    <ul2 style="list-style: none; display: grid; grid-template-columns: 1fr 1fr;">
+                        <li style="margin-top: 29px; width: 72;"><a href="/AUSTRALIYA NEWS/AUSTRALIYAMAIN.HTML"
+                                style="text-decoration: none; color: #E4E9F7;">Australia</a></li>
+                        <li style="margin-top: 29px; width: 72;"><a href="/RUSSIA NEWS/RUSSIAMAIN.HTML"
+                                style="text-decoration: none; color: #E4E9F7;">Russia</a></li>
+                    </ul2>
+
+
+
+                </div>
+                <div class="v"></div>
+                <div style="margin-top: 40px; ">
+                    <ul3 style="list-style: none; display: grid; grid-template-columns: 1fr 1fr;">
+                        <li style="width: 72;"><a href="/cricket.html" style="text-decoration: none; color: #E4E9F7;">Cricket</a>
+                        </li>
+                        <li style="width: 72;"><a href="/football.html" style="text-decoration: none; color: #E4E9F7;">Football</a>
+                        </li>
+                    </ul3>
+                    <ul4 style="list-style: none; display: grid; grid-template-columns: 1fr 1fr;">
+                        <li style="margin-top: 29px;"><a href="/hindinews.html" style="text-decoration: none; color: #E4E9F7;">हिन्दी
+                                न्यूज़</a></li>
+                        <li><a href=""></a></li>
+                    </ul4>
+                </div>
+
+
+            </div>
+
+            <div class="right">
+
+
+                <span>
+
+                    <input style="margin-left: 100px; margin-top: 30px;color:black" type="text number" id="search"
+                        placeholder="Search News Here ">
+                    <a class="btn btn-primary" id="b">GO</a>
+                </span>
+                <div id="google_translate_element">
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                        }
+                    </script>
+
+                    <script type="text/javascript"
+                        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                </div>
+
+            </div>
+
+            <div class="sidebar">
+                <div class="logo-details">
+
+                    <div class="logo_name">Newsconnect</div>
+                    <i class='bx bx-menu' id="btn"></i>
+                </div>
+
+                <ul class="nav-list">
+                    <li>
+                        <a href="/mainwebsitelayout.html">
+                            <i class='bx bx-home-alt'></i>
+                            <span class="links_name">Home Page</span>
+                        </a>
+                        <span class="tooltip">Dashboard</span>
+                    </li>
+                    <li>
+                        <a href="/indiahealth.html">
+                            <i class='bx bx-plus-circle'></i>
+                            <span class="links_name">Health</span>
+                        </a>
+                        <span class="tooltip">Health</span>
+                    </li>
+                    <li>
+                        <a href="indianentertainement.html">
+                            <i class='bx bx-radio'></i>
+                            <span class="links_name">Entertainment</span>
+                        </a>
+                        <span class="tooltip">Entertainment</span>
+                    </li>
+                    <li>
+                        <a href="indiasports.html">
+                            <i class='bx bx-tennis-ball'></i>
+                            <span class="links_name">Sports</span>
+                        </a>
+                        <span class="tooltip">Sports</span>
+                    </li>
+                    <li>
+                        <a href="indiatechnology.html">
+                            <i class='bx bx-memory-card'></i>
+                            <span class="links_name">Technology</span>
+                        </a>
+                        <span class="tooltip">Technology</span>
+                    </li>
+                    <li>
+                        <a href="indiabuisness.html">
+                            <i class='bx bxs-business'></i>
+                            <span class="links_name">Business</span>
+                        </a>
+                        <span class="tooltip">Business</span>
+                    </li>
+                    <li>
+                        <a href="indiascience.html">
+                            <i class='bx bxs-flask'></i>
+                            <span class="links_name">Science</span>
+                        </a>
+                        <span class="tooltip">Science</span>
+                    </li>
+
+
+                </ul>
+            </div>
+
+
+            <script>
+                let sidebar = document.querySelector(".sidebar");
+                let closeBtn = document.querySelector("#btn");
+                let searchBtn = document.querySelector(".bx-search");
+
+                closeBtn.addEventListener("click", () => {
+                    sidebar.classList.toggle("open");
+                    menuBtnChange(); //calling the function(optional)
+                });
+
+
+
+                // following are the code to change sidebar button(optional)
+                function menuBtnChange() {
+                    if (sidebar.classList.contains("open")) {
+                        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+                    } else {
+                        closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+                    }
+                }
+            </script>
+
+
+
+        </div>
+
+
+        <div id="item1">
+
+        </div>
+
+        <div class="item footer">
+            <span> <img src="/Newsconnect (1).png" alt="" style="margin-left: 108px;margin-top: 10px; border: 1px solid #ddd;
+             border-radius: 4px;
+             padding: 5px;
+             width: 250px;">
+             <ul style="list-style: none; color: #E4E9F7; text-align: justify; margin-right: 50px; margin-left: 50px ;margin-left: 108px;margin-top: 10px;">
+                 <li style="text-decoration: underline; margin-top: 10px;font-family: 'Nunito', sans-serif;font-weight: bold;margin-bottom: 10px;">Our Source Providers</li>
+                 <li ><a href="https://newsapi.org/" target="_blank" style="text-decoration: none;color: #E4E9F7">Newsapi</a></li>
+                 <li><a href="https://openweathermap.org/" target="_blank" style="text-decoration: none;color: #E4E9F7">Openweathermapapi</a></li>
+                 <li><a href="https://www.cricwaves.com/" target="_blank" style="text-decoration: none;color: #E4E9F7">cricwaves</a></li>
+             </ul></span>
+
+                
+                <ul style="list-style: none; color: #E4E9F7; text-align: justify; margin-right: 50px; margin-left: 50px ;">    
+                   <li style="text-decoration: underline; margin-top: 10px;font-family: 'Nunito', sans-serif;font-weight: bold;">
+                       About our website
+                   </li>
+                   <li style="margin-top: 20px; font-family: 'Nunito', sans-serif; font-weight: bold;">
+                    We discovered the problem that our peer group was not in the habit of news reading or following up with the latest events and they found the reason was simply that the lengthy news articles were not engaging enough. So we found Newsconnect to provide relevant news articles for users to quickly consume the most relevant content of the day and stay up to date with the relevant news.
+                    We wanted to provide a website to our users where they can read all the news directly without subscribing and get all the information from different websites. We are also not asking them to sign up on our website because we want our website to be users friendly.   
+                   </li> 
+                </ul>
+                <ul style="list-style: none; color: #E4E9F7; text-align: justify; margin-right: 50px; margin-left: 50px ;">    
+                   <li style="text-decoration: underline;margin-top: 10px;font-family: 'Nunito', sans-serif;font-weight: bold;">
+                       About us
+                   </li>
+                   <li style="margin-top: 20px; font-family: 'Nunito', sans-serif;font-weight: bold;">
+                    We are students of the Vellore Institute of Technology at Bhopal. We are in batch 2020-24. We have designed this website as a project after a lot of research. We as a group include Ojas Jajoo, Vimal Kumar, Priyanshu Assudani, Krishna Murari Pandey, and Nikhil Sahu. 
+                   </li> 
+                </ul>
+
+
+                
+            
+
+        </div>
+
+    </div>
+
+
+    </div>
+    <script src="/indiahealth.js"></script>
+</body>
+
+</html>

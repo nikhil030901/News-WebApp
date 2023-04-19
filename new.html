@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/weather2.css">
+</head>
+<body>
+    <!-- <div class="accordion" id="newsAccordion"></div> -->
+</div>
+Optional JavaScript
+jQuery first, then Popper.js, then Bootstrap JS
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script> 
+
+
+<!-- this is weather 2 html code -->
+<!-- <div class="card">
+    <div class="search">
+        <input type="text" id="search-bar" placeholder="Search">
+        <button id="fetchBtn"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em"
+            width="1.5em" xmlns="http://www.w3.org/2000/svg">
+            <path
+            d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
+        </path>
+    </svg></button>
+</div>
+<div class="weather loading">
+    <h2 class="city">N/A</h2>
+    <h1 class="temp">N/A</h1>
+    <div class="flex">
+        <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+        <div class="description">Cloudy</div>
+    </div>
+    <div class="humidity">Humidity: N/A</div>
+    <div class="wind">Wind speed: N/A</div>
+</div>
+</div>-->
+
+<div><input type="text" class="search" id="cityname" name="city"></div>
+<div><input type="button" value="submit" class="btn" id="fetchBtn"></div>
+<div class="container">
+    <div class="card">
+      <h1 class="name" id="cityname"></h1>
+      <p class="temp"></p>
+      <p class="feels_like"></p>
+      <div class="flex">
+        <img src="" alt="" class="icon" >
+        <span id="newsdescription"></span>
+      </div>
+      <p class="humidity"></p>
+      <p class="windspeed"></p>
+    </div>
+  </div>
+<!-- <span id="error"></span> -->
+<script src="/new.js"></script>
+</body>
+</html>

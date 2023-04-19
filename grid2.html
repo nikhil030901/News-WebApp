@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>grid</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }  
+        #container{
+            background-color: red;
+            height: 700px;
+            /* width: 10 px; */
+            display: grid;
+            grid-template-columns: 360px 360px 360px ;
+            grid-template-rows: 40px;
+            grid-row-gap: 40px; 
+            grid-column-gap: 40px;
+            /* margin-top: 50px;
+            margin-right: 250px;
+            margin-left: 90px;
+            margin-bottom: 10px; */
+            /* grid-row-start: 1/span/3; */
+           
+            
+            
+        }
+        .item{
+            display: grid;
+            background-color: aqua;
+            border: 4px solid black;
+            background-size: cover;
+            
+            
+        }  
+        .title{
+            
+            text-align: left;
+        }
+        .card-img-top{
+            border-top-left-radius: calc(.25rem - 19px);
+    border-top-right-radius: calc(.25rem - 19px);
+        }
+        /** #bigcontainer{
+            display: grid;
+            /* grid-template-rows: 50px 50px 250px; */
+            /* grid-template-columns: 50px 250px 50px; */
+            /* background-color: blue;
+            border: 4px solid maroon;
+            grid-row-gap: 140px; */
+            /* grid-column-gap: 140px; */
+       /* }*/
+        .item1{
+            border: 2px solid yellow;
+            background-color: cyan;
+            
+        } 
+        .item2{
+            /* grid-row-start: 2;
+            grid-row-end: 7; */
+            border: 2px solid rgb(102, 13, 175);
+            background-color: rgb(63, 5, 8);
+           
+        }
+      
+        
+    </style>
+</head>
+<body>
+    <!-- <div id="bigcontainer"> -->
+         <!-- <div class="item1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nostrum magni tempora, quibusdam officia ratione cupiditate, labore, accusamus doloremque sequi illo accusantium nihil maiores cum. Harum beatae dolorem saepe quis reiciendis optio.
+
+        </div> -->
+        
+        
+        <div id="container" class="item3">
+        <!-- <div id="container2" class="item3">
+
+
+
+        </div>  -->
+        
+
+
+
+
+
+            <!-- <div class="item2">
+                for cricket and weather
+    
+            </div> -->
+        </div> 
+        
+        
+    <script src="/grid2.js"></script>  
+</body>
+</html>
+
+
+
+
+<!-- this is how i created grid for my website -->
+
+
+
+<!-- 
+
+<div class="item">
+    <img src="https://source.unsplash.com/1600x900/?" class="card-img-top" alt="...">           
+    <div class="card-body">
+        <h5 class="title">${element["title"]} Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum excepturi amet a officiis dolore ratione non at qui consequatur aperiam?</h5>
+        <p class="text">${element["content"]}</p>
+      </div>
+</div>
+<div class="item">
+    <img src="https://source.unsplash.com/1600x900/?" class="card-img-top" alt="...">
+      
+    </div>
+    <div class="item">
+        <img src="https://source.unsplash.com/1600x900/?" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="title">${element["title"]} Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum excepturi amet a officiis dolore ratione non at qui consequatur aperiam?</h5>
+            <p class="text">${element["content"]}</p>
+          </div>
+          <ul class="list-group list-group-flush">
+              
+        <div>
+              <li class="list-group-item">${element["name"]}</li>
+              <li class="list-group-item">${element["publishedAt"]}</li>
+              <li class="list-group-item">${element["author"]}</li>
+            </ul>
+            <div class="card-body">
+                <a href="" class="btn btn-primary">READ MORE</a>
+            </div>
+        </div>
+    <div class="item">
+        <img src="https://source.unsplash.com/1600x900/?" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="title">${element["title"]} Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum excepturi amet a officiis dolore ratione non at qui consequatur aperiam?</h5>
+            <p class="text">${element["content"]}</p>
+          </div>
+          <ul class="list-group list-group-flush">
+              
+        <div>
+              <li class="list-group-item">${element["name"]}</li>
+              <li class="list-group-item">${element["publishedAt"]}</li>
+              <li class="list-group-item">${element["author"]}</li>
+            </ul>
+            <div class="card-body">
+                <a href="" class="btn btn-primary">READ MORE</a>
+            </div>
+        </div>
+    <div class="item">
+        <img src="https://source.unsplash.com/1600x900/?" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="title">${element["title"]} Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum excepturi amet a officiis dolore ratione non at qui consequatur aperiam?</h5>
+            <p class="text">${element["content"]}</p>
+          </div>
+          <ul class="list-group list-group-flush">
+              
+        <div>
+              <li class="list-group-item">${element["name"]}</li>
+              <li class="list-group-item">${element["publishedAt"]}</li>
+              <li class="list-group-item">${element["author"]}</li>
+            </ul>
+            <div class="card-body">
+                <a href="" class="btn btn-primary">READ MORE</a>
+            </div>
+        </div>
+    <div class="item">
+        <img src="https://source.unsplash.com/1600x900/?" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="title">${element["title"]} Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum excepturi amet a officiis dolore ratione non at qui consequatur aperiam?</h5>
+            <p class="text">${element["content"]}</p>
+          </div>
+          <ul class="list-group list-group-flush">
+              
+        <div>
+              <li class="list-group-item">${element["name"]}</li>
+              <li class="list-group-item">${element["publishedAt"]}</li>
+              <li class="list-group-item">${element["author"]}</li>
+            </ul>
+            <div class="card-body">
+                <a href="" class="btn btn-primary">READ MORE</a>
+            </div>
+        </div>
+    <div class="item">
+        <img src="https://source.unsplash.com/1600x900/?" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="title">${element["title"]} Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum excepturi amet a officiis dolore ratione non at qui consequatur aperiam?</h5>
+            <p class="text">${element["content"]}</p>
+          </div>
+          <ul class="list-group list-group-flush">
+              
+        <div>
+              <li class="list-group-item">${element["name"]}</li>
+              <li class="list-group-item">${element["publishedAt"]}</li>
+              <li class="list-group-item">${element["author"]}</li>
+            </ul>
+            <div class="card-body">
+                <a href="" class="btn btn-primary">READ MORE</a>
+            </div>
+        </div>
+    <div class="item">
+        <img src="https://source.unsplash.com/1600x900/?" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="title">${element["title"]} Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum excepturi amet a officiis dolore ratione non at qui consequatur aperiam?</h5>
+            <p class="text">${element["content"]}</p>
+          </div>
+          <ul class="list-group list-group-flush">
+              
+        <div>
+              <li class="list-group-item">${element["name"]}</li>
+              <li class="list-group-item">${element["publishedAt"]}</li>
+              <li class="list-group-item">${element["author"]}</li>
+            </ul>
+            <div class="card-body">
+                <a href="" class="btn btn-primary">READ MORE</a>
+            </div>
+        </div>
+    <div class="item">
+        <img src="${element["urlToImage"]}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="title">${element["title"]} Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum excepturi amet a officiis dolore ratione non at qui consequatur aperiam?</h5>
+            <p class="text">${element["content"]}</p>
+          </div>
+          <ul class="list-group list-group-flush">
+              
+        <div>
+              <li class="list-group-item">Source - ${element["name"]}</li>
+              <li class="list-group-item">Published At - {element["publishedAt"]}</li>
+              <li class="list-group-item">Author's Name - ${element["author"]}</li>
+            </ul>
+            <div class="card-body">
+                <a href="" class="btn btn-primary">READ MORE</a>
+            </div>
+        </div>
+        
+        
+            <img src="https://source.unsplash.com/1600x900/?" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="title">${element["title"]} Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum excepturi amet a officiis dolore ratione non at qui consequatur aperiam?</h5>
+                <p class="text">${element["content"]}</p>
+              </div> -->

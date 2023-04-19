@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="news_connect.css">
+  <title>weather</title>
+  <style>
+    /* .header{
+        border: 50px;
+        background-color: rgba(4, 17, 17, 0.185);
+        border: radius 20px solid black;
+        margin: 0px;
+        padding: 48px;
+        margin-top: 4px;
+        
+        padding-left: 50px;
+        padding-top: 36px;
+        font-size:0rem; */
+
+
+
+
+
+    /* } */
+  </style>
+</head>
+
+<body>
+
+  <div class="bigcontainer">
+    <div class="header">
+   <a href="/mainwebsitelayout.html"> <img style="border: 1px solid white;margin-left: 11px;" src="/Newsconnect (1).png" alt=""><span></a>
+     
+        <h1 style="padding-top: 46px;margin-right: 400px;">Weather</h1>
+      </span>
+
+
+
+    </div>
+
+
+     <div class="searchbar">
+      <input type="text" id="text"placeholder="   Enter the City Name">
+      <input type="submit" value="Submit" id="submit">
+     </div>
+     <div class="city" style="width: auto; text-align: center;font-weight:bold;font-size: large;background-color: #11101d;color: white;margin-right: 135px;border-radius: 36px;">
+
+     </div>
+     <div class="coordinates" style="width: auto;text-align: center;font-weight:bold;font-size: large;background-color: #11101d;color: white;margin: 15px;border-radius: 36px;">
+       <div class="lat">
+
+       </div>
+       <div class="long">
+
+       </div>
+     </div>
+    
+    <div class="container">
+
+
+      <div class="card" style="width:auto;">
+        <div class="card-body">
+          <h5 class="card-title">Temperature</h5>
+          <h6 class="card-subtitle mb-2 text-muted"></h6>
+          <p class="card-text">
+          <p id="temp"> </p>
+          <p id="feel"> </p>
+          <p id="max"></p>
+          <p id="min"></p>
+          </p>
+
+        </div>
+      </div>
+
+
+
+
+      <div class="card" style="width:auto;">
+        <div class="card-body">
+          <h5 class="card-title">Weather</h5>
+          <h6 class="card-subtitle mb-2 text-muted"></h6>
+          <p class="card-text">
+          <div><img src="" alt="" id="icon">
+            <span id="description"> </span>
+          </div>
+          <div id="visible"> </div>
+          </p>
+
+        </div>
+      </div>
+
+
+
+      <div class="card" style="width:auto;">
+        <div class="card-body">
+          <h5 class="card-title">Wind</h5>
+          <h6 class="card-subtitle mb-2 text-muted"></h6>
+          <p class="card-text">
+          <div id="wind"> </div>
+          <div id="gust"> </div>
+          </p>
+
+        </div>
+      </div>
+
+
+
+      <div class="card" style="width:auto;">
+        <div class="card-body">
+          <h5 class="card-title">Atmosphere</h5>
+          <h6 class="card-subtitle mb-2 text-muted"></h6>
+          <p class="card-text">
+          <div id="humidity"> </div>
+          <div id="pressure"> </div>
+          </p>
+
+        </div>
+      </div>
+
+
+
+
+      <div class="card" style="width:auto;">
+        <div class="card-body">
+          <h5 class="card-title">Sea Level and Ground Level</h5>
+          <h6 class="card-subtitle mb-2 text-muted"></h6>
+          <p class="card-text">
+          <div id="sea"> </div>
+          <div id="ground"></div>
+          </p>
+
+        </div>
+      </div>
+
+
+
+      <div class="card" style="width: auto;">
+        <div class="card-body">
+          <h5 class="card-title">Sunrise and Sunset</h5>
+          <h6 class="card-subtitle mb-2 text-muted"></h6>
+          <p class="card-text">
+          <div id="date"> </div>
+          <div id="sunrise"> </div>
+          <div id="sunset"> </div>
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+    <script src="/newweather.js"></script>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OpenWeatherMap Api</title>
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+  <!-- <div class="main">
+    <div class="header">
+      <h1>OpenWeatherMap API</h1>
+      <p>Enter any city name in the input box below to get the data</p>
+    </div> -->
+    
+    <div class="input">
+      <input type="text" placeholder="Enter the city" class="input_text">
+      <input type="submit" value="Submit" class="submit" target="_blank">
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="card">
+      <h1 class="name" id="cityname"></h1>
+      <p class="temp"></p>
+      <p class="feels_like"></p>
+      <div class="flex">
+        <img src="" alt="" class="icon" >
+        <span class="description"></span>
+      </div>
+      <p class="humidity"></p>
+      <p class="windspeed"></p>
+    </div>
+  </div>
+  <script src="/weather.js"></script>
+</body>
+</html>
